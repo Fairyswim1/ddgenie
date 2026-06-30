@@ -1,0 +1,19 @@
+{
+  "name": "ddgenie",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Genie project hub for AI-assisted teaching and learning challenge.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.3",
+    "vite": "latest"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
+}

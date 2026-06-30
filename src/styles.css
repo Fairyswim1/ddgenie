@@ -1,0 +1,511 @@
+:root {
+  color-scheme: light;
+  --font-family: "Gowun Dodum", sans-serif;
+  --color-brand-yellow: #ffce44;
+  --color-brand-orange: #ff8e4b;
+  --color-brand-green: #98d8aa;
+  --color-brand-blue: #4fb6ff;
+  --color-brand-brown: #5d4037;
+  --color-brand-purple: #9b7fe8;
+  --color-bg-light: #fffdf5;
+  --color-panel: #fffaf0;
+  --color-line: #f5f0e6;
+  --color-muted: #8d7b75;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  font-family: var(--font-family);
+  color: var(--color-brand-brown);
+  background: var(--color-bg-light);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 14% 22%, rgba(255, 206, 68, 0.2), transparent 20rem),
+    radial-gradient(circle at 92% 8%, rgba(79, 182, 255, 0.14), transparent 22rem),
+    var(--color-bg-light);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.app {
+  width: min(100%, 1480px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.35rem clamp(1rem, 3vw, 2.5rem) 2.4rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.logo-icon {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 4px 8px rgba(93, 64, 55, 0.08));
+}
+
+.logo-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.logo-main {
+  color: var(--color-brand-brown);
+  font-size: clamp(1.85rem, 3vw, 2.55rem);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+.logo-sub {
+  color: var(--color-brand-orange);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 800;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.header-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7rem;
+  padding: 0 1.25rem;
+  border: none;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.98rem;
+  font-weight: 900;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.header-pill.blue {
+  background: var(--color-brand-blue);
+  border-bottom: 4px solid #3a9cd9;
+}
+
+.header-pill.orange {
+  background: var(--color-brand-orange);
+  border-bottom: 4px solid #e67a3d;
+}
+
+.teacher-card {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 3.1rem;
+  padding: 0.45rem 0.9rem;
+  border: 2px solid var(--color-line);
+  border-radius: 16px;
+  background: white;
+  color: var(--color-brand-brown);
+  box-shadow: 0 4px 12px rgba(93, 64, 55, 0.04);
+}
+
+.teacher-card span {
+  font-size: 0.9rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.teacher-card span + span {
+  padding-left: 0.55rem;
+  border-left: 1px solid var(--color-line);
+}
+
+.library-section {
+  background: transparent;
+}
+
+.library-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.library-header h1 {
+  color: var(--color-brand-brown);
+  font-size: clamp(1.65rem, 2.6vw, 2.25rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.library-header p {
+  margin-top: 0.25rem;
+  color: var(--color-muted);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.library-tools {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.library-tools span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0 0.9rem;
+  border: 2px solid var(--color-line);
+  border-radius: 12px;
+  background: white;
+  color: var(--color-brand-brown);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.section-stack {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.project-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.section-number {
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  border-radius: 14px;
+  background: var(--color-brand-yellow);
+  color: var(--color-brand-brown);
+  font-size: 1rem;
+  font-weight: 900;
+  box-shadow: 0 4px 0 rgba(93, 64, 55, 0.12);
+}
+
+.project-group-header h2 {
+  color: var(--color-brand-brown);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.project-group-header p {
+  margin-top: 0.15rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.35rem;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  min-height: 295px;
+  overflow: hidden;
+  flex-direction: column;
+  border: 2px solid var(--color-line);
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(93, 64, 55, 0.03);
+  transition: all 0.28s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+  border-color: var(--color-brand-yellow);
+  box-shadow: 0 14px 24px rgba(93, 64, 55, 0.1);
+  transform: translateY(-5px);
+}
+
+.project-thumb {
+  position: relative;
+  display: flex;
+  height: 145px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-card.main .project-thumb,
+.project-card.video .project-thumb,
+.project-card.game .project-thumb {
+  background: var(--color-brand-yellow);
+}
+
+.project-card.student .project-thumb,
+.project-card.genie .project-thumb,
+.project-card.simulator .project-thumb {
+  background: var(--color-brand-green);
+}
+
+.project-card:nth-child(4n) .project-thumb,
+.project-card:nth-child(5n) .project-thumb {
+  background: var(--color-brand-blue);
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0.78;
+  mix-blend-mode: multiply;
+  transform: scale(1.02);
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s ease;
+}
+
+.project-card:hover .project-thumb img {
+  opacity: 0.95;
+  transform: scale(1.06);
+}
+
+.thumb-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.25rem 0.55rem;
+  border-radius: 7px;
+  background: rgba(93, 64, 55, 0.68);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 900;
+  backdrop-filter: blur(4px);
+}
+
+.project-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.15rem 1.2rem 1rem;
+}
+
+.card-meta {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.card-meta span {
+  padding: 0.18rem 0.48rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.card-meta span:first-child {
+  background: #fff9e6;
+  color: #d9a000;
+}
+
+.card-meta span:last-child {
+  background: #fff0e6;
+  color: var(--color-brand-orange);
+}
+
+.project-body h3 {
+  color: var(--color-brand-brown);
+  font-size: 1.14rem;
+  font-weight: 900;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-muted);
+}
+
+.card-footer span,
+.card-footer strong {
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.card-footer strong {
+  color: var(--color-brand-orange);
+}
+
+@media (max-width: 900px) {
+  .site-header,
+  .library-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .header-actions,
+  .library-tools {
+    justify-content: flex-start;
+  }
+
+  .teacher-card {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .site-header {
+    margin-bottom: 1.4rem;
+  }
+
+  .header-actions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+  }
+
+  .header-pill {
+    min-height: 2.35rem;
+    padding: 0 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .teacher-card {
+    grid-column: span 2;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .teacher-card span {
+    font-size: 0.78rem;
+  }
+
+  .library-header h1 {
+    font-size: 1.45rem;
+  }
+
+  .library-header p {
+    font-size: 0.9rem;
+  }
+
+  .library-tools {
+    display: none;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .section-stack {
+    gap: 1.65rem;
+  }
+
+  .project-group {
+    gap: 0.75rem;
+  }
+
+  .project-group-header {
+    align-items: flex-start;
+  }
+
+  .section-number {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+  }
+
+  .project-group-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-group-header p {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .project-card {
+    min-height: 220px;
+    border-radius: 16px;
+  }
+
+  .project-thumb {
+    height: 100px;
+  }
+
+  .project-body {
+    padding: 0.8rem;
+  }
+
+  .card-meta {
+    gap: 0.25rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .card-meta span {
+    padding: 0.13rem 0.35rem;
+    font-size: 0.58rem;
+  }
+
+  .project-body h3 {
+    font-size: 0.92rem;
+  }
+
+  .card-footer {
+    padding-top: 0.55rem;
+  }
+
+  .card-footer span,
+  .card-footer strong {
+    font-size: 0.68rem;
+  }
+}
