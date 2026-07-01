@@ -389,6 +389,22 @@ img {
   word-break: keep-all;
 }
 
+.pin-link {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #c45a00;
+  font: inherit;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.pin-link:hover {
+  color: #f58220;
+}
+
 .card-footer {
   display: flex;
   align-items: center;

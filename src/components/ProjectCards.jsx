@@ -33,6 +33,14 @@ export default function ProjectCards() {
   );
 }
 
+function buildJoinUrl(baseUrl, pin) {
+  const url = new URL(baseUrl);
+  url.searchParams.set("pin", pin);
+  url.searchParams.set("nickname", "학생");
+  url.searchParams.set("autoJoin", "1");
+  return url.toString();
+}
+
 function ProjectCard({ project }) {
   return (
     <a className={`project-card ${project.type}`} href={project.url} target="_blank" rel="noreferrer">
@@ -46,7 +54,29 @@ function ProjectCard({ project }) {
           <span>{project.label}</span>
         </div>
         <h3>{project.title}</h3>
-        {project.note && <p className="card-note">{project.note}</p>}
+        {project.pins?.length ? (
+          <p className="card-note">
+            {project.note}{" "}
+            {project.pins.map((pin, index) => (
+              <span key={pin}>
+                {index > 0 && ", "}
+                <button
+                  type="button"
+                  className="pin-link"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    window.open(buildJoinUrl(project.url, pin), "_blank", "noopener,noreferrer");
+                  }}
+                >
+                  {pin}
+                </button>
+              </span>
+            ))}
+          </p>
+        ) : (
+          project.note && <p className="card-note">{project.note}</p>
+        )}
         <div className="card-footer">
           <span>Genie</span>
           <strong>열기 →</strong>

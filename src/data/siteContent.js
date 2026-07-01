@@ -23,7 +23,8 @@ export const linkCards = [
     url: "https://ddclass.vercel.app/join",
     image: "/screenshots/ddclass-character.png",
     imageAlt: "DD Class student site screenshot",
-    note: "테스트용 PIN number: 431593, 896606, 642348",
+    note: "테스트용 PIN number:",
+    pins: ["431593", "896606", "642348"],
   },
   {
     title: "수업 꾸러미 만들기 영상",
