@@ -65,7 +65,7 @@ export const linkCards = [
     group: "수학게임",
     type: "game",
     url: "https://forest-zeta-umber.vercel.app/",
-    image: "/screenshots/math-game.png",
+    image: "/screenshots/number-trail-worldmap.png",
     imageAlt: "Number Trail math game screenshot",
   },
   {
@@ -82,12 +82,12 @@ export const linkCards = [
 export const projectSections = [
   {
     title: "DD Class",
-    subtitle: "수업 꾸러미 제작·실행과 학생 참여를 확인할 수 있습니다.",
+    subtitle: "드래그앤드롭 기반 활동을 통해 학생이 사고의 흐름을 직접 구성하도록 지원하는 플랫폼",
     cards: linkCards.slice(0, 4),
   },
   {
     title: "Genie Class",
-    subtitle: "발표 기록과 관찰 메모를 남기는 교사용·학생용 사이트입니다.",
+    subtitle: "수업 준비부터 발표·퀴즈·과제·기록까지 한곳에서 마법처럼 도와주는 스마트 교실 플랫폼",
     cards: linkCards.slice(4, 6),
   },
   {

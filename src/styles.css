@@ -283,6 +283,14 @@ img {
     transform 0.35s ease;
 }
 
+.project-card.main .project-thumb img,
+.project-card.student .project-thumb img {
+  object-fit: contain;
+  object-position: center 42%;
+  padding: 0.25rem 0.4rem 0;
+  background: #fffdf5;
+}
+
 .project-card:hover .project-thumb img {
   transform: scale(1.06);
 }
