@@ -96,7 +96,7 @@ export const projectSections = [
   },
   {
     title: "번외",
-    subtitle: "수학 게임과 학생 시뮬레이터 수행평가 갤러리입니다.",
+    subtitle: "최근 개발중인 초, 중학생을 위한 수학 게임과 학생 시뮬레이터 수행평가 갤러리입니다.",
     cards: linkCards.slice(6),
   },
 ];
