@@ -291,8 +291,24 @@ img {
   background: #fffdf5;
 }
 
+.project-card.video .project-thumb img {
+  width: 88%;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.4rem 0;
+  background: #fffdf5;
+}
+
+.project-card.simulator .project-thumb img {
+  transform: translateY(-34px) scale(1.02);
+}
+
 .project-card:hover .project-thumb img {
   transform: scale(1.06);
+}
+
+.project-card.simulator:hover .project-thumb img {
+  transform: translateY(-34px) scale(1.06);
 }
 
 .thumb-badge {
