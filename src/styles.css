@@ -299,8 +299,15 @@ img {
   background: #fffdf5;
 }
 
+.project-card.genie .project-thumb img {
+  object-fit: contain;
+  object-position: center 38%;
+  padding: 0.2rem 0.4rem 0;
+  background: #fffdf5;
+}
+
 .project-card.simulator .project-thumb img {
-  transform: translateY(-34px) scale(1.02);
+  transform: translateY(-60px) scale(1.02);
 }
 
 .project-card:hover .project-thumb img {
@@ -308,7 +315,7 @@ img {
 }
 
 .project-card.simulator:hover .project-thumb img {
-  transform: translateY(-34px) scale(1.06);
+  transform: translateY(-60px) scale(1.06);
 }
 
 .thumb-badge {
