@@ -8,10 +8,6 @@ export default function ProjectCards() {
           <h1>전체 프로젝트 라이브러리</h1>
           <p>총 {linkCards.length}개의 사이트와 활용 자료입니다.</p>
         </div>
-        <div className="library-tools">
-          <span>🏠 홈</span>
-          <span>↗ 새 창으로 열기</span>
-        </div>
       </div>
 
       <div className="section-stack">

@@ -7,7 +7,6 @@ export default function Hero() {
         <span className="logo-icon">☁️</span>
         <div className="logo-text">
           <span className="logo-main">{heroContent.title}</span>
-          <span className="logo-sub">Class</span>
         </div>
       </div>
 

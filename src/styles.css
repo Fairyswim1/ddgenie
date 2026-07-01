@@ -271,30 +271,12 @@ img {
   overflow: hidden;
 }
 
-.project-card.main .project-thumb,
-.project-card.video .project-thumb,
-.project-card.game .project-thumb {
-  background: var(--color-brand-yellow);
-}
-
-.project-card.student .project-thumb,
-.project-card.genie .project-thumb,
-.project-card.simulator .project-thumb {
-  background: var(--color-brand-green);
-}
-
-.project-card:nth-child(4n) .project-thumb,
-.project-card:nth-child(5n) .project-thumb {
-  background: var(--color-brand-blue);
-}
-
 .project-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  opacity: 0.78;
-  mix-blend-mode: multiply;
+  opacity: 1;
   transform: scale(1.02);
   transition:
     opacity 0.25s ease,
@@ -302,7 +284,6 @@ img {
 }
 
 .project-card:hover .project-thumb img {
-  opacity: 0.95;
   transform: scale(1.06);
 }
 
