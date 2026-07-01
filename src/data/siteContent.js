@@ -78,7 +78,7 @@ export const linkCards = [
     group: "학생 작품",
     type: "simulator",
     url: "https://simul-xi.vercel.app/",
-    image: "/screenshots/simulator-gallery.png",
+    image: "/screenshots/simulator-gallery-banner.png",
     imageAlt: "Math simulator gallery screenshot",
   },
 ];
