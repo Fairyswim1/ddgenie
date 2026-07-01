@@ -13,6 +13,7 @@ export const linkCards = [
     url: "https://ddclass.vercel.app/",
     image: "/screenshots/ddclass-character.png",
     imageAlt: "DD Class teacher site screenshot",
+    note: "Google 로그인 필요",
   },
   {
     title: "DD Class 학생용",
@@ -22,6 +23,7 @@ export const linkCards = [
     url: "https://ddclass.vercel.app/join",
     image: "/screenshots/ddclass-character.png",
     imageAlt: "DD Class student site screenshot",
+    note: "테스트용 PIN number: 431593, 896606, 642348",
   },
   {
     title: "수업 꾸러미 만들기 영상",
@@ -49,6 +51,7 @@ export const linkCards = [
     url: "https://genieclass.vercel.app/teacher-portal",
     image: "/screenshots/genieclass-teacher.png",
     imageAlt: "Genie Class teacher site screenshot",
+    note: "Google 로그인 필요",
   },
   {
     title: "Genie Class 학생용",
@@ -58,6 +61,7 @@ export const linkCards = [
     url: "https://genieclass.vercel.app/",
     image: "/screenshots/genieclass-student.png",
     imageAlt: "Genie Class student site screenshot",
+    note: "테스트용 아이디: test, 비번: test",
   },
   {
     title: "넘버 트레일",

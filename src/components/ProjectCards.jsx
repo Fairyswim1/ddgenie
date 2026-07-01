@@ -46,6 +46,7 @@ function ProjectCard({ project }) {
           <span>{project.label}</span>
         </div>
         <h3>{project.title}</h3>
+        {project.note && <p className="card-note">{project.note}</p>}
         <div className="card-footer">
           <span>Genie</span>
           <strong>열기 →</strong>

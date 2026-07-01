@@ -363,6 +363,18 @@ img {
   word-break: keep-all;
 }
 
+.card-note {
+  margin-top: 0.55rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 10px;
+  background: #fff9e6;
+  color: #7a6a64;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+
 .card-footer {
   display: flex;
   align-items: center;
@@ -503,6 +515,13 @@ img {
 
   .project-body h3 {
     font-size: 0.92rem;
+  }
+
+  .card-note {
+    margin-top: 0.42rem;
+    padding: 0.34rem 0.42rem;
+    font-size: 0.66rem;
+    line-height: 1.3;
   }
 
   .card-footer {
