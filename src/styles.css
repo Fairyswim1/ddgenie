@@ -303,7 +303,6 @@ img {
   object-fit: contain;
   object-position: center 38%;
   padding: 0.2rem 0.4rem 0;
-  background: #fffdf5;
 }
 
 .project-card.simulator .project-thumb {
